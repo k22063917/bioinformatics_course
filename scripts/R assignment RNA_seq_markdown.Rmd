@@ -1,0 +1,48 @@
+---
+title: "Advanced Bioinformatics assignment R"
+author: "k22063917/m2205707"
+date: "2023-04-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# setting my working directory that contain o	LMS_RNAseq_short-master-2023-final/course/exercises/data/exercise1_counts.csv
+
+```{R RNA-seq}
+setwd("D:/MSc/Advanced bioinformatics/RNA seq/RNA seq/LMS_RNAseq_short-master-2023-final/LMS_RNAseq_short-master-2023-final/course/exercises/data")
+```
+
+#read data exercixe1_counts.csv
+```{R RNA-seq}
+RNAseq_assignment <- read.csv("exercise1_counts.csv", header = TRUE)
+```
+
+#read data "exercise1_sample_description.info"
+```{R RNA-seq}
+exercise1_sample_description.info <- read.table("exercise1_sample_description.info", header = FALSE)
+```
+
+
