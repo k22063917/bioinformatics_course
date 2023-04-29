@@ -118,4 +118,4 @@ cd annovar
 
 ./convert2annovar.pl -format vcf4 ~/AdvancedBioinformatics/results/NGS0001_filtered_hg19.vcf.gz > ~/AdvancedBioinformatics/results/NGS0001_filtered_hg19.avinput
 
-./table_annovar.pl ~/AdvancedBioinformatics/results/NGS0001_filtered_hg19.avinput humandb/ -buildver hg19 -out ~/AdvancedBioinformatics/results/NGS0001_filtered_hg19 -remove -protocol refGene,ensGene,clinvar_20180603,exac03,dbnsfp31a_interpro -operation g,g,f,f,f -otherinfo -nastring . -csvout
+./table_annovar.pl ~/AdvancedBioinformatics/results/NGS0001_filtered_hg19.avinput humandb/ -buildver hg19 -out ~/AdvancedBioinformatics/results/NGS0001_filtered_hg19 -remove -protocol refGene,ensGene,clinvar_20180603,exac03,dbnsfp31a_interpro -operati
